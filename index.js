@@ -1,24 +1,12 @@
+import React from "react";
+import ReactDOM from "react-dom/client";
 
-//---- 2
-function printCurrentPage(){
-	window.print();
-}
+const heading = React.createElement("h1",{id:"heading"},"Hello");
+console.log(heading);
 
-let  a = 23;
-a = 'Akhil';
-a = true;
-a=Number(a);
+//jsx heading
+const jsxheading = <div className="abc"><h1 id="heading">heading in JSX</h1></div>
+console.log(jsxheading);
 
-console.log(a);
-console.log(typeof(a));
-
-
-
-function subval(){
-	event.preventDefault();
-	var firstval = document.querySelector("#val1").value;
-	var secondval = document.querySelector("#val2").value;
-	var total = Number(firstval) + Number(secondval);
-	var out = document.getElementById("op");
-	out.innerHTML = `${total}`;
-}
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(jsxheading);
