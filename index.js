@@ -5,7 +5,12 @@ const heading = React.createElement("h1",{id:"heading"},"Hello");
 console.log(heading);
 
 //jsx heading
-const jsxheading = <div className="abc"><h1 id="heading">heading in JSX</h1></div>
+const jsxheading = (
+    <div className="abc">
+        <h1 id="heading">heading in JSX</h1>
+        <h3>H3</h3>
+    </div>
+)
 console.log(jsxheading);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
