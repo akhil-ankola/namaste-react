@@ -1,17 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import  './style.css'
 
-const heading = React.createElement("h1",{id:"heading"},"Hello");
-console.log(heading);
-
-//jsx heading
-const jsxheading = (
-    <div className="abc">
-        <h1 id="heading">heading in JSX</h1>
-        <h3>H3</h3>
-    </div>
-)
-console.log(jsxheading);
+import App from "./App";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(jsxheading);
+root.render(<App/>);
