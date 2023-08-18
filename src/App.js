@@ -1,26 +1,6 @@
 import React from "react";
-
-const RestCart = (props) => {
-
-    const { resData } = props;
-    const {name, cloudinaryImageId, avgRating, areaName, locality, cuisines } = resData.info;
-
-    return(
-        <div className="res_card">
-            <div>
-                <img src={"https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/"+ cloudinaryImageId }/>
-                <div className="cardcontaint">
-                    <h2>{name}</h2>
-                    <h3>
-                      <img src="https://www.freeiconspng.com/uploads/white-star-icon-13.png"/>
-                      {avgRating}</h3>
-                    {/* <address>{areaName + ", " + locality}</address> */}
-                    <h4>{cuisines.join(", ")}</h4>
-                </div>
-            </div>
-        </div>
-    );
-}
+import Header from "./components/Header";
+import Body from "./components/Body";
 
 const resList = [
   {
@@ -2316,55 +2296,6 @@ const resList = [
     }
   }
 ]
-
-
-
-
-const Header = () => {
-    return(
-        <div className="header">
-            <div className="logo_container">
-                <img src="https://logolook.net/wp-content/uploads/2023/04/Swiggy-Logo.png"/>
-            </div>
-            <div className="nav-item">
-                <ul>
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>cart</li>
-                    <li>contact</li>
-                    <li>login</li>
-                </ul>
-            </div>
-        </div>
-    );
-}
-
-
-const Body = () => {
-    return(
-        <div className="body">
-            <div className="search">search</div>
-            <div className="res_container">
-                {/* <RestCart resname={data[0].info.name} rating={data[0].info.avgRating} address={data[0].info.locality + "," + data[0].info.areaName} imgid={data[0].info.cloudinaryImageId} cuisines={data[0].info.cuisines}/> */}
-                {/* <RestCart resname={data[1].info.name} rating={data[1].info.avgRating} address={data[1].info.locality + "," + data[1].info.areaName} imgid={data[1].info.cloudinaryImageId} cuisines={data[1].info.cuisines}/> */}
-                {/* <RestCart resname="Mackdonal" rating="4.0" address="blabla new city "/>
-                <RestCart resname="Steasty vadapav" rating="4.7" address="blabla  new country"/> */}
-                {/* <RestCart resData={resList[0]}/>
-                <RestCart resData={resList[1]}/>
-                <RestCart resData={resList[2]}/>
-                <RestCart resData={resList[3]}/> */}
-
-                {resList.map((restorant)=>{
-                  return(
-                    <RestCart key={restorant.info.id} resData={restorant}/>
-                  );
-                })}
-
-            </div>
-        </div>
-    );
-}
-
 
 
 const App = () => {
