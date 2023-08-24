@@ -12,8 +12,9 @@ const RestCart = (props) => {
                 <div className="cardcontaint">
                     <h2>{name}</h2>
                     <h3>
-                      <img src={STAR_URL}/>
-                      {avgRating}</h3>
+                      <img src={STAR_URL} style={ avgRating < 4 ? { background:'#ff6f00', color: 'white'} : {}}/>
+                      {avgRating}
+                      </h3>
                     {/* <address>{areaName + ", " + locality}</address> */}
                     <h4>{cuisines.join(", ")}</h4>
                     
