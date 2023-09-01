@@ -17,3 +17,12 @@ diff algorithem finds out between two virtual dom (apdeted virtual dom and previ
 # react fiber
 in react 16 a new algoritherm to updated came out , this new algorithem known as React Fiber.
 react do effecient dom manipulation so thet it is fast.
+
+# when state variable are update, react triggers reconciliation cycle (re-render the component)
+
+#Ternary operator
+#.include()   <-- function
+
+# CORS
+# optional chaining
+# Shimer UI

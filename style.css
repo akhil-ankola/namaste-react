@@ -21,7 +21,7 @@ body{
 .header  ul{
 	display: grid;
     grid-column: auto;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: auto auto auto auto auto;
     grid-gap: 20px;
 	list-style: none;
 	padding: 0px 20px;
@@ -116,3 +116,88 @@ body{
 	background-color: #3E4152;
 	color: white;
 } */
+
+.Load_img{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 10%;
+	height: auto;
+}
+.Load_img img{
+	width: 100%;
+	height: 100%;
+}
+
+
+.simmer_container{
+	margin-top: 50px;
+
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;	
+}
+.shimmer_card{
+	margin: 20px;
+	text-decoration: none;
+    color: inherit;
+    outline: 0px;
+    cursor: pointer;
+    display: block;
+    width: 19.5rem;
+    height: auto;
+	border-radius: 10px;
+}
+.shimer_img{
+	width: 100%;
+    height: 200px;
+    object-fit: cover;
+	border-radius: 10px;
+	background-color: rgb(196, 196, 196);
+}
+.shimer_containent_1{
+	width: 100%;
+	height: 1.6em;
+	margin: 10px 0px 0px;
+	background-color: rgb(196, 196, 196);
+}
+.shimer_containent_2{
+	width: 20%;
+	height: 1em;
+	margin: 10px 0px;
+	background-color: rgb(196, 196, 196);
+}
+
+ /* filter Search */
+.search{
+	height: 36px;
+	padding: 0px;
+	margin: 15px 20px 0px 20px;
+	border: 1px solid rgba(2,6,12,.14901960784313725);
+    border-radius: 100px;
+}
+.search input{
+	height: 100%;
+    padding: 0 12px;
+	font-family:'Josefin Sans', sans-serif;
+	font-size: 1rem;
+	font-weight: 600;
+	border: 0px;
+	border-radius: 100px 0 0 100px;
+}
+.search button{
+	height: 100%;
+    padding: 0 12px;
+	font-family:'Josefin Sans', sans-serif;
+	font-size: 1rem;
+	font-weight: 600;
+	margin: 0;
+	align-items: center;
+	color: #282c3f;
+	cursor: pointer;
+	border-radius: 0px 100px 100px 0px;
+}
+.search button:hover{
+	background-color: #d1d1d1;
+}

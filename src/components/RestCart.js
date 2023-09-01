@@ -17,6 +17,7 @@ const RestCart = (props) => {
                       </h3>
                     {/* <address>{areaName + ", " + locality}</address> */}
                     <h4>{cuisines.join(", ")}</h4>
+                    {/* <address>{areaName}</address> */}
                     
                 </div>
             </div>
