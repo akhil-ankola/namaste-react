@@ -21,7 +21,7 @@ body{
 .header  ul{
 	display: grid;
     grid-column: auto;
-    grid-template-columns: auto auto auto auto auto;
+    grid-template-columns: auto auto auto auto auto auto auto;
     grid-gap: 20px;
 	list-style: none;
 	padding: 0px 20px;
