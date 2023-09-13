@@ -1,6 +1,10 @@
 import React from "react";
 import Header from "./components/Header";
 import Body from "./components/Body";
+import About from "./components/About";
+import Contectus from "./components/Contectus";
+import Error from "./components/Error";
+import { Outlet, createBrowserRouter } from "react-router-dom";
 
 const resList = [
   {
@@ -2302,9 +2306,32 @@ const App = () => {
     return(
         <div className="App">
             <Header/>
-            <Body/>
+            <Outlet/>
         </div>
     );
 }
+
+export const appRouter = createBrowserRouter([
+  {
+    path: '/',
+    element: <App/>,
+    children: [
+      {
+        path: '/',
+        element: <Body/>
+      },
+      {
+        path: '/about',
+        element: <About/>
+      },
+      {
+        path: '/contactus',
+        element: <Contectus/>
+      }
+    ],
+    errorElement: <Error/>
+  },
+  
+]);
 
 export default App;

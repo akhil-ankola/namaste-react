@@ -93,6 +93,15 @@ const Body = () => {
                     setfilteredRestoreant(filterRestorant);
                   } }>Search</button>
 
+
+{/* <input type="text" value={searchval} onChange={ (e)=>{
+  setsearchval(e.target.value)
+  const filterRestorant = listOfRestorant.filter( 
+    (res)=> res.info.name.toLowerCase().includes(searchval.toLowerCase()) )
+    setfilteredRestoreant(filterRestorant);
+}}></input> */}
+
+
               </div>
               <button 
                 className="filter-btn" 
