@@ -4,6 +4,7 @@ import Body from "./components/Body";
 import About from "./components/About";
 import Contectus from "./components/Contectus";
 import Error from "./components/Error";
+import Restorants from "./components/Restorants";
 import { Outlet, createBrowserRouter } from "react-router-dom";
 
 const resList = [
@@ -2327,6 +2328,10 @@ export const appRouter = createBrowserRouter([
       {
         path: '/contactus',
         element: <Contectus/>
+      },
+      {
+        path: '/restorants/:resId',
+        element: <Restorants/>
       }
     ],
     errorElement: <Error/>

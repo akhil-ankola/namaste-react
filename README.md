@@ -26,3 +26,6 @@ react do effecient dom manipulation so thet it is fast.
 # CORS
 # optional chaining
 # Shimer UI
+
+
+# dynamick routing
