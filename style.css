@@ -4,6 +4,10 @@ body{
 	background-color: #F4F4F5;
 }
 
+a{
+	text-decoration: none;
+}
+
 .App{
 	
 }
@@ -200,4 +204,17 @@ body{
 }
 .search button:hover{
 	background-color: #d1d1d1;
+}
+
+/* Restorat Component */
+.restorant_menu{
+	max-width: 80%;
+    display: block;
+    margin: auto;
+    padding: 20px;
+    margin-top: 20px;
+}
+.border{
+	border: none;
+    border-bottom: 1px dashed #d3d3d3;
 }

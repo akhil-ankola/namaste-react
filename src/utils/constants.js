@@ -7,4 +7,6 @@ const LOGO_URL = "https://logolook.net/wp-content/uploads/2023/04/Swiggy-Logo.pn
 // const LOAD_IMG = "https://i.pinimg.com/originals/c4/cb/9a/c4cb9abc7c69713e7e816e6a624ce7f8.gif";
 const LOAD_IMG = "https://i.gifer.com/ZKZg.gif";
 
-export {CDN_URL,STAR_URL,LOGO_URL,LOAD_IMG};
+const MENU_API = "https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=22.341447&lng=73.176968&restaurantId=";
+
+export {CDN_URL,STAR_URL,LOGO_URL,LOAD_IMG,MENU_API};

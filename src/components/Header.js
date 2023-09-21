@@ -3,6 +3,7 @@ import {LOGO_URL} from "../utils/constants";
 import { User, useAuth0 } from '@auth0/auth0-react';
 import LoginButton from "./LoginButton";
 import LogoutButton from "./LogoutButton";
+import { Link } from "../../node_modules/react-router-dom";
 
 const Header = () => {
 
@@ -22,10 +23,10 @@ const Header = () => {
             </div>
             <div className="nav-item">
                 <ul>
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>cart</li>
-                    <li>contact</li>
+                    <Link to="/"><li>Home</li></Link>
+                    <Link to="/about"><li>About</li></Link>
+                    <Link to="/"><li>cart</li></Link>
+                    <Link to="/contactus"><li>contact</li></Link>
 
                     {/* <button onClick={ ()=>{
                         btnLoginOut === 'LogOut' 
